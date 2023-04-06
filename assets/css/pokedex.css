@@ -1,0 +1,75 @@
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ececec;
+}
+
+.pokemon .numero {
+  color: #000;
+  opacity: 0.3;
+  text-align: right;
+  font-size: 0.9rem;
+}
+.pokemon .nome {
+  font-size: 1.4rem;
+  color: #000;
+  margin: 0.25rem 0;
+  text-transform: capitalize;
+}
+
+.pokemon .detalhes .botao {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pokemon .detalhes .botao .tipo {
+  color: #b61111;
+  background-color: #fff;
+  padding: 1rem 1rem;
+  font-size: 0.7rem;
+  margin: 0.25rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.pokemon .detalhes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pokemon .detalhes img {
+  height: 70px;
+}
+@media screen and (min-width: 380px) {
+  .pokemons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .pokemons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pokemons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
