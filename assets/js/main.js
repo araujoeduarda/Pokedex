@@ -33,7 +33,7 @@ const typeColors = {
   water: "lightblue",
   grass: "green",
   electric: "lightyellow",
-  psychic: "pink",
+  psychic: "purple",
   ice: "iceblue",
   dragon: "orange",
   dark: "gray",
