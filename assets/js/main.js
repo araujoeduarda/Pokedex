@@ -66,11 +66,12 @@ function convertPokemonToLi(pokemon, index) {
             <li class="tipo"><a href="${pokemonUrl}" target="_blank">Saiba Mais</a></li>
           </ol>
 
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${number}.gif" alt="${
-        pokemon.name
-      }">
+          <img src="https://img.pokemondb.net/sprites/home/normal/${
+            pokemon.name
+          }.png" alt="${pokemon.name}">
         </div>
       </li>
+      
       `;
     })
     .catch((error) => console.error(error));
