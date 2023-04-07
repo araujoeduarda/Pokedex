@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+a {
+  color: #b61111;
+  text-decoration: none;
+}
+
 .pokemon {
   display: flex;
   flex-direction: column;
@@ -64,6 +69,7 @@
 .pokemon .detalhes img {
   height: 70px;
 }
+
 @media screen and (min-width: 380px) {
   .pokemons {
     grid-template-columns: repeat(2, 1fr);
