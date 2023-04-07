@@ -14,11 +14,12 @@
   padding: 1rem;
   border-radius: 1rem;
   background-color: #ececec;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .pokemon .numero {
   color: #000;
-  opacity: 0.3;
+  opacity: 0.7;
   text-align: right;
   font-size: 0.9rem;
 }
@@ -38,11 +39,18 @@
 .pokemon .detalhes .botao .tipo {
   color: #b61111;
   background-color: #fff;
-  padding: 1rem 1rem;
-  font-size: 0.7rem;
+  padding: 0.7rem 1rem;
   margin: 0.25rem 0;
   border-radius: 1rem;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pokemon .detalhes .botao .tipo:hover {
+  background-color: rgb(250, 245, 239);
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(80, 79, 79, 0.2);
 }
 
 .pokemon .detalhes {
@@ -60,11 +68,21 @@
   .pokemons {
     grid-template-columns: repeat(2, 1fr);
   }
+  .pokemon .detalhes .botao .tipo {
+    white-space: nowrap;
+    font-size: 0.5rem;
+    border-radius: 0.6rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
   .pokemons {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .pokemon .detalhes .botao .tipo {
+    font-size: 0.8rem;
+    margin: 0.25rem 0;
+    border-radius: 0.5rem;
   }
 }
 

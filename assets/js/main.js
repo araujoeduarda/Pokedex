@@ -1,5 +1,5 @@
 const offset = 0;
-const limit = 26;
+const limit = 40;
 const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 
 function convertPokemonToLi(pokemon, index) {
