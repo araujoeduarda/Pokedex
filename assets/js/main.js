@@ -19,6 +19,27 @@ const typeTranslations = {
   fairy: "Fada",
 };
 
+const typeColors = {
+  normal: "black",
+  fighting: "orange",
+  flying: "black",
+  poison: "purple",
+  ground: "brown",
+  rock: "gray",
+  bug: "lightpurple",
+  ghost: "darkgray",
+  steel: "metal",
+  fire: "red",
+  water: "lightblue",
+  grass: "green",
+  electric: "lightyellow",
+  psychic: "pink",
+  ice: "iceblue",
+  dragon: "orange",
+  dark: "gray",
+  fairy: "pink",
+};
+
 function convertPokemonToLi(pokemon, index) {
   const number = index + 1;
   const pokemonId = pokemon.url.split("/").slice(-2, -1)[0];
@@ -33,11 +54,12 @@ function convertPokemonToLi(pokemon, index) {
         .map((type) => typeTranslations[type.type.name])
         .join(", ");
       const speciesName = species.name;
+      const typeColor = typeColors[types[0].type.name];
 
-      return `<li class="pokemon">
+      return `<li class="pokemon" style="color: ${typeColor}">
         <span class="numero">#${number.toString().padStart(3, "0")}</span>
         <span class="nome">${pokemon.name}</span>
-        <span class="tipo">${typeNames}</span>
+        <span class="tipos">${typeNames}</span>
 
         <div class="detalhes">
           <ol class="botao">
