@@ -18,15 +18,20 @@ a {
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #ececec;
+  background-color: #f0f3f8;
+}
+
+.pokemon:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  background-color: #ebebeb;
 }
 
 .pokemon .numero {
   color: #000;
   opacity: 0.7;
   text-align: right;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .pokemon .nome {
   font-size: 1.4rem;
