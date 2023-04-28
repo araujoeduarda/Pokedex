@@ -22,11 +22,12 @@
 
 # ℹ️ **Informações do Projeto**
 
-Tecnologias utilizadas:
+Recursos utilizadss:
 
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript (Template strings, Event listeners, Fetch API, Manipulação do DOM.)</li>
+<li>Event listeners</li>
+<li>Template strings</li>
+<li>Fetch API</li>
+<li>Manipulação do DOM</li>
 <li>API do PokeAPI</li>
 <br>
 Pontos importantes:
